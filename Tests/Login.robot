@@ -22,8 +22,8 @@ Open_Application
 #    Wait Until Page Contains Element    ${input_username}
 
 
-    Open Chat21 application
+    Open Chat 21 application on device 1
     Login with valid user   ${user1_info}[email]    ${user1_info}[password]
-    Logout Chat21 application
+    Open Chat 21 application on device 2
     Login with valid user   ${user2_info}[email]    ${user2_info}[password]
-    Logout Chat21 application
+
