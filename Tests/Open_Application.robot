@@ -18,15 +18,4 @@ ${profile_button_logout}       //android.widget.Button[@resource-id="chat21.andr
 Open_Application
 #    Open Application    http://127.0.0.1:4723/wd/hub   platformName=Android     deviceName=J7TKMRMZPFKVW8OR       app=F:/PythonAppium/Resources/Chat21_1.0.9_apkcombo.com.apk     appPackage=chat21.android.demo      appActivity=chat21.android.demo.SplashActivity       automationName=UiAutomator2
     Open Application    http://127.0.0.1:4723/wd/hub   platformName=Android     deviceName=emulator-5554       app=F:/PythonAppium/Resources/Chat21_1.0.9_apkcombo.com.apk     appPackage=chat21.android.demo      appActivity=chat21.android.demo.SplashActivity       automationName=UiAutomator2
-    Wait Until Page Contains Element    ${input_username}
-    Wait Until Page Contains Element    ${input_password}
-    Wait Until Page Contains Element    ${button_login}
-    Input Text    ${input_username}     ${user_info}[email]
-    Input Text    ${input_password}     ${user_info}[password]
-    Click Element    ${button_login}
-    Wait Until Page Contains Element    ${main_home_tab}    15
-    Wait Until Page Contains Element    ${main_home_select_contact}    15
-    Click Element    ${main_profile_tab}
-    Wait Until Page Contains Element    ${profile_button_logout}
-    Click Element    ${profile_button_logout}
-    Wait Until Page Contains Element    ${input_username}
+
